@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-image: url( pics/peque.jpg);
+    overflow-x: hidden;
+
+}
+/*Asegúrate de que el contenedor principal use flex-direction: column; para que los títulos aparezcan de arriba a abajo:*/
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    width: 100vw;
+
+}/*el vh y vw es usado para que el */
+/*el header es el contenedor padre
+"contenedor esta dentro del header
+letteres estan dentro de contenedor
+por ende asi se iran limitando las dimensiones"*/
+.contenedor{
+    display: flex;/*para poder usar las propiedades de flex*/
+    flex-wrap:wrap ;
+    flex-direction: column;/*para que se distribuyan en columnas*/
+    justify-content: center;
+    align-items: center;
+    min-width: 32rem; /* Asegura que el contenedor ocupe todo el ancho */
+    max-width: 100%;
+    background-color: transparent;
+}
+.letteres {
+    border: 0.1rem solid black;
+
+    margin: 1rem 0; /* Espacio entre los títulos */
+    font-size: 4vw; /* Tamaño de texto basado en el ancho de la ventana gráfica */
+    color: white;
+    text-align: center;
+}
+.divh1{/*look at our parties*/
+
+    display: flex;/*siempre que se vaya a usar justify content hay que usar display flex */
+    justify-content: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+    margin:1.5rem 0 ;
+    font-size: large;
+    color: rgb(125, 142, 251);
+    border: white solid 1px;
+
+}
+
+.images {
+    display: flex; /* alinea los elementos secundarios en una fila por defecto. */
+    align-items: center; /* Alinea verticalmente  */
+    margin: 2rem 0; /* Espacio alrededor del contenedor */
+}
+
+.images img {
+    
+    width: 50%; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción original */
+    max-width: 300px; /* Tamaño máximo de la imagen */
+    margin-right: 1rem; /* Espacio entre la imagen y el párrafo */
+}
+
+.parrafo {
+    background-color: aliceblue;
+
+    font-size: 1.6rem; /* Tamaño del texto del párrafo */
+    color: rgb(62, 193, 245); /* Color del texto */
+    max-width: 40%; /* Opcional: Limita el ancho máximo del párrafo */
+    line-height: 1.5; /* Espaciado entre líneas para mejor legibilidad */
+}
+.divenjoy{/*anuncio de que te unas*/
+    background-color: aliceblue;
+
+    color: rgb(62, 193, 245);
+    display: flex;
+    justify-content: center;
+    border: 1px azure dashed;
+}
+.enjoy{
+    font-size: 2rem;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2rem;
+    flex-direction: column;
+    max-width: 60rem;
+    min-width: 20rem;
+    
+    min-height: 10rem;
+    max-height: 30rem;
+}
+.formulario label{
+    background-color: aliceblue;
+    color: rgb(62, 193, 245);
+}
+.formulario input {
+    width: 10rem;
+    height: 2rem;
+}
+

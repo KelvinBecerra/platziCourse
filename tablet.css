@@ -1,0 +1,23 @@
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2rem;
+    flex-direction: column;
+    max-width: 70rem;
+    min-width: 30rem;
+    
+    min-height: 20rem;
+    max-height: 40rem;
+
+}
+.formulario label{
+    background-color: aliceblue;
+    color: rgb(62, 193, 245);
+    font-size: large;
+}
+.formulario input {
+    width: 25rem;
+    height: 3rem;
+}

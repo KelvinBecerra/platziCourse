@@ -1,0 +1,47 @@
+.images {
+    display: flex; /* alinea los elementos secundarios en una fila por defecto. */
+    align-items: center; /* Alinea verticalmente  */
+    margin: 3rem 0; /* Espacio alrededor del contenedor */
+    }
+.images p{
+    border-color:none ;
+    font-size:medium;
+    font-size: 2rem;
+}
+.parrafo {
+        
+    border:0.1rem dashed black ;
+    font-size: 1.6rem; /* Tamaño del texto del párrafo */
+    color: rgb(62, 193, 245); /* Color del texto */
+    max-width: 40%; /* Opcional: Limita el ancho máximo del párrafo */
+    line-height: 1.5; /* Espaciado entre líneas para mejor legibilidad */
+}
+.images img{
+    width: 70%; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción original */
+    max-width: 40rem; /* Tamaño máximo de la imagen */
+    margin-right: 1rem; /* Espacio entre la imagen y el párrafo */
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 2rem;
+    flex-direction: column;
+    max-width: 90rem;
+    min-width: 50rem;
+        
+    min-height: 20rem;
+    max-height: 40rem;
+
+}
+.formulario label{
+    background-color: aliceblue;
+    color: rgb(62, 193, 245);
+    font-size: large;
+}
+.formulario input {
+    width: 25rem;
+    height: 3rem;
+}
